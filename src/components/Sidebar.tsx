@@ -37,7 +37,7 @@ const playlists = [
 
 export default function Sidebar({ activeView, onViewChange }: SidebarProps) {
   return (
-    <aside className="w-64 bg-[#111] flex flex-col h-full select-none shrink-0">
+    <aside className="w-64 glass-dark flex flex-col h-full select-none shrink-0">
       <div className="p-5 pb-2">
         <div className="flex items-center gap-3 mb-6">
           <div className="w-8 h-8 bg-[#fc3c44] rounded-lg flex items-center justify-center">

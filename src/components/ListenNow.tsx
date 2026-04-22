@@ -4,7 +4,7 @@ import { recentlyPlayed, newReleases, featuredPlaylists, featuredAlbum } from '.
 
 export default function ListenNow() {
   return (
-    <div className="flex-1 overflow-y-auto bg-[#1c1c1e]">
+    <div className="flex-1 overflow-y-auto bg-gradient-to-b from-[#0a0a0a] to-[#1c1c1e]">
       <div
         className="relative h-72 overflow-hidden"
         style={{
@@ -42,7 +42,7 @@ export default function ListenNow() {
                 <Play size={14} fill="white" />
                 Play
               </button>
-              <button className="flex items-center gap-2 bg-white/15 hover:bg-white/20 text-white text-[13px] font-semibold px-5 py-2.5 rounded-full transition-colors backdrop-blur-sm">
+              <button className="flex items-center gap-2 glass-sm hover:bg-white/20 text-white text-[13px] font-semibold px-5 py-2.5 rounded-full transition-colors">
                 Add to Library
               </button>
             </div>
@@ -110,7 +110,7 @@ export default function ListenNow() {
             {[...recentlyPlayed.slice(0, 4)].map((album, i) => (
               <button
                 key={album.id}
-                className="flex items-center gap-3 bg-white/5 hover:bg-white/10 rounded-xl p-3 transition-colors group"
+                className="flex items-center gap-3 glass-sm hover:bg-white/10 rounded-xl p-3 transition-colors group"
               >
                 <span className="text-white/30 text-[13px] font-bold w-5 text-center shrink-0">{i + 1}</span>
                 <img src={album.cover} alt={album.title} className="w-10 h-10 rounded-lg object-cover shrink-0" />

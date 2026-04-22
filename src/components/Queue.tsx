@@ -7,7 +7,7 @@ interface QueueProps {
 
 export default function Queue({ onClose }: QueueProps) {
   return (
-    <div className="w-72 bg-[#1c1c1e] border-l border-white/10 flex flex-col shrink-0">
+    <div className="w-72 glass-dark border-l border-white/10 flex flex-col shrink-0">
       <div className="flex items-center justify-between px-5 py-4 border-b border-white/10">
         <h2 className="text-white font-semibold text-[15px]">Up Next</h2>
         <button onClick={onClose} className="text-white/40 hover:text-white transition-colors">
@@ -18,7 +18,7 @@ export default function Queue({ onClose }: QueueProps) {
       <div className="flex-1 overflow-y-auto py-2">
         <div className="px-3 mb-1">
           <p className="text-[11px] font-semibold text-[#ebebf566] uppercase tracking-wider px-2 py-1">Now Playing</p>
-          <div className="flex items-center gap-3 px-2 py-2 rounded-lg bg-white/10">
+          <div className="flex items-center gap-3 px-2 py-2 rounded-lg glass-sm">
             <img
               src={queueTracks[0].cover}
               alt={queueTracks[0].album}

@@ -71,7 +71,7 @@ export default function Player({ onQueueToggle, showQueue }: PlayerProps) {
   };
 
   return (
-    <div className="h-[90px] bg-[#1c1c1e]/95 backdrop-blur-2xl border-t border-white/10 flex items-center px-5 gap-4 shrink-0">
+    <div className="h-[90px] glass-dark border-t border-white/10 flex items-center px-5 gap-4 shrink-0">
       <div className="flex items-center gap-3 w-[280px] min-w-0">
         <div className="relative group cursor-pointer shrink-0">
           <img
